@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<title>test userAgent for IE11</title>
+	<script type="text/javascript" src="userAgent.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var ua = userAgent(),
+				body = document.body;
+
+			for(var item in ua){
+				
+				var p = document.createElement('p');
+				p.innerHTML = item + " : " + ua[item];
+				body.appendChild(p);
+
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
